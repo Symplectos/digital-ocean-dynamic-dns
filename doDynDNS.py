@@ -147,7 +147,7 @@ def main():
     try:
         # READ AND PARSE THE CONFIG FILE ###############################################################################
         doConfig = configparser.ConfigParser()
-        doConfig.read('do.conf')
+        doConfig.read('.do.conf')
 
         # check for a valid file
         for section, parameters in configFileStructure.items():
