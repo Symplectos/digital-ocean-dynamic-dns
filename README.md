@@ -1,7 +1,9 @@
 # Digital Ocean Dynamic DNS
-Python script to update DNS records managed by Digital Ocean.
+Python script to update DNS records managed by [Digital Ocean](https://digitealocean.com]. Useful for home servers with dynamic IP addresses.
 
-Useful for home servers with dynamic IP addresses.
+Uses the [ipify API](https://www.ipify.org/) to get the public IPv4 and IPv6 addresses of the server running the script.
+Each specified record in a specified domain is then updated, if, and only if, the A or AAAA record known by Digital
+Ocean does not match the corresponding IP address returned by ipify.
 
 ## Installation
 Installation if straightforward.
@@ -18,8 +20,32 @@ python3 -m venv env
 ```
 
 ### Install Libraries
+The script requires the **[requests](https://2.python-requests.org/en/master/)** library. All requirements can be
+installed by invoking pip:
+
 ```
 pip install -r requirements
+```
+
+### Configuration
+To configure doDynDNS, a **.do.conf** file must be created in the root folder of the project:
+
+```
+touch .do.conf
+```
+
+The configuration requires two sections, a **DigitalOcean** section containing a valid API Access Key,
+and a **DNS** section, containing the specific domain and specific records to update. Multiple records can be specified
+by simply putting each record into a new line:
+
+```
+[DigitalOcean]
+key = ***
+
+[DNS]
+domain = myDomain.eu
+records = sub1
+          sub2
 ```
 
 ## Cronjob
