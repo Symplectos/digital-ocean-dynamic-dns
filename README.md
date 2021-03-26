@@ -5,6 +5,8 @@ Uses the [ipify API](https://www.ipify.org/) to get the public IPv4 and IPv6 add
 Each specified record in a specified domain is then updated, if, and only if, the A or AAAA record known by Digital
 Ocean does not match the corresponding IP address returned by ipify.
 
+**Note**: This project is managed on GitLab and only mirrored on GitHub.
+
 ## Installation
 Installation if straightforward.
 
