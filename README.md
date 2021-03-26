@@ -70,3 +70,6 @@ source env/bin/activate
 ```
 python doDynDNS.py
 ```
+
+## Logging
+The script automatically logs its last run in the **doDynDNS.log** file.
