@@ -8,7 +8,7 @@ Ocean does not match the corresponding IP address returned by ipify.
 **Note**: This project is managed on GitLab and only mirrored on GitHub.
 
 ## Installation
-Installation if straightforward.
+Installation is straightforward.
 
 ### Clone the Repository
 ```
