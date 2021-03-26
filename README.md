@@ -5,7 +5,7 @@ Uses the [ipify API](https://www.ipify.org/) to get the public IPv4 and IPv6 add
 Each specified record in a specified domain is then updated, if, and only if, the A or AAAA record known by Digital
 Ocean does not match the corresponding IP address returned by ipify.
 
-**Note**: This project is managed on GitLab and only mirrored on GitHub.
+**Note**: This project is managed on [GitLab](https://gitlab.com/Symplectos/digital-ocean-dynamic-dns) and mirrored on [GitHub](https://github.com/Symplectos/digital-ocean-dynamic-dns).
 
 ## Installation
 Installation is straightforward.
@@ -76,3 +76,11 @@ python doDynDNS.py
 
 ## Logging
 The script automatically logs its last run in the **doDynDNS.log** file.
+
+<br />
+
+---
+
+# References
+* [DigitalOcean API](https://developers.digitalocean.com/documentation/v2/)
+* [ipify API](https://www.ipify.org/)
