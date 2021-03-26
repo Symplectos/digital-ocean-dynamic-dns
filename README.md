@@ -1,5 +1,5 @@
 # Digital Ocean Dynamic DNS
-Python script to update DNS records managed by [Digital Ocean](https://digitealocean.com]. Useful for home servers with dynamic IP addresses.
+Python script to update DNS records managed by [Digital Ocean](https://digitealocean.com). Useful for home servers with dynamic IP addresses.
 
 Uses the [ipify API](https://www.ipify.org/) to get the public IPv4 and IPv6 addresses of the server running the script.
 Each specified record in a specified domain is then updated, if, and only if, the A or AAAA record known by Digital
