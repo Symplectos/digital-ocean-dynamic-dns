@@ -26,6 +26,7 @@ The script requires the **[requests](https://2.python-requests.org/en/master/)**
 installed by invoking pip:
 
 ```
+source bin/env/activate
 pip install -r requirements
 ```
 
